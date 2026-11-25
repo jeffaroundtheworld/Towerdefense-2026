@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://capsfoul5b4r6"]
+
+[ext_resource type="Script" uid="uid://dfsh5tny6px6s" path="res://menu.gd" id="1_lti8b"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_c1fkk"]
+font_size = 60
+
+[node name="menu" type="CanvasLayer" unique_id=1368585851]
+process_mode = 3
+script = ExtResource("1_lti8b")
+
+[node name="Panel" type="Panel" parent="." unique_id=1280737070]
+offset_left = 317.0
+offset_top = 142.0
+offset_right = 819.0
+offset_bottom = 448.0
+
+[node name="title" type="Label" parent="Panel" unique_id=292996045]
+layout_mode = 0
+offset_left = 155.0
+offset_top = 3.0
+offset_right = 337.0
+offset_bottom = 86.0
+text = "Menu"
+label_settings = SubResource("LabelSettings_c1fkk")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1267457726]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 92.0
+offset_right = 194.0
+offset_bottom = 232.0
+
+[node name="buyhealth" type="Button" parent="Panel/VBoxContainer" unique_id=532553279]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Buy Health"
+
+[node name="slowenemies" type="Button" parent="Panel/VBoxContainer" unique_id=400646222]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Slow Enemies"
+
+[node name="slowspawn" type="Button" parent="Panel/VBoxContainer" unique_id=392257380]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Slow Spawn"
+
+[connection signal="pressed" from="Panel/VBoxContainer/buyhealth" to="." method="_on_buyhealth_pressed"]

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://1dusg64w4tbl"]
+
+[ext_resource type="PackedScene" uid="uid://cfjjplpnh4cy8" path="res://tower.tscn" id="1_hn12h"]
+[ext_resource type="PackedScene" uid="uid://50scu1fqhkom" path="res://spawner.tscn" id="3_hn12h"]
+[ext_resource type="PackedScene" uid="uid://bo0r7ir8aew6j" path="res://healthstats.tscn" id="4_ihfcg"]
+[ext_resource type="PackedScene" uid="uid://capsfoul5b4r6" path="res://menu.tscn" id="4_rka8t"]
+
+[node name="level1" type="Node2D" unique_id=615840620]
+metadata/_edit_vertical_guides_ = [1246.0]
+metadata/_edit_horizontal_guides_ = [422.0]
+
+[node name="tower" parent="." unique_id=674336662 instance=ExtResource("1_hn12h")]
+position = Vector2(1091, 62)
+
+[node name="Spawner" parent="." unique_id=2116658394 instance=ExtResource("3_hn12h")]
+position = Vector2(-1, -5)
+
+[node name="statsbar" parent="." unique_id=76649438 instance=ExtResource("4_ihfcg")]
+unique_name_in_owner = true
+
+[node name="menu" parent="." unique_id=1368585851 instance=ExtResource("4_rka8t")]
+visible = false

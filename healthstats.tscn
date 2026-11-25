@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bo0r7ir8aew6j"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_c1fkk"]
+font_size = 53
+font_color = Color(0.18039216, 0.37254903, 1, 1)
+outline_size = 4
+
+[node name="statsbar" type="CanvasLayer" unique_id=928666827]
+process_mode = 3
+
+[node name="healthstats" type="Label" parent="." unique_id=76649438]
+offset_right = 455.0
+offset_bottom = 113.0
+text = "Here is the health"
+label_settings = SubResource("LabelSettings_c1fkk")
+
+[node name="score" type="Label" parent="." unique_id=1574447983]
+offset_left = 489.0
+offset_top = -1.0
+offset_right = 944.0
+offset_bottom = 112.0
+text = "Here is the score"
+label_settings = SubResource("LabelSettings_c1fkk")

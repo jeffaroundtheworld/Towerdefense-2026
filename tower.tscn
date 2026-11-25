@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cfjjplpnh4cy8"]
+
+[ext_resource type="Texture2D" uid="uid://bs1cg036l3nqr" path="res://icon.svg" id="1_k1sas"]
+[ext_resource type="Script" uid="uid://ckskvcnbuy3kd" path="res://tower.gd" id="1_vedim"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c1fkk"]
+size = Vector2(277, 659)
+
+[node name="tower" type="StaticBody2D" unique_id=674336662]
+process_mode = 3
+script = ExtResource("1_vedim")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1854610696]
+position = Vector2(-21, 262)
+scale = Vector2(2.1, 5.1399975)
+texture = ExtResource("1_k1sas")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=950883654]
+position = Vector2(-23.5, 261.5)
+shape = SubResource("RectangleShape2D_c1fkk")
